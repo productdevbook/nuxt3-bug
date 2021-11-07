@@ -1,6 +1,5 @@
 @import 'base';
 @import 'colors';
-@import 'fonts';
 @import 'themes/dark';
 @import 'themes/light';
 @import 'variables';
@@ -13,20 +12,23 @@
 @import 'lib/fullcalendar';
 @import 'lib/frappe-charts';
 
-body.light {
+body{
 	@include light;
 }
+// body.light {
+// 	@include light;
+// }
 
-body.dark {
-	@include dark;
-}
+// body.dark {
+// 	@include dark;
+// }
 
-body.auto {
-	@media (prefers-color-scheme: dark) {
-		@include dark;
-	}
+// body.auto {
+// 	@media (prefers-color-scheme: dark) {
+// 		@include dark;
+// 	}
 
-	@media (prefers-color-scheme: light) {
-		@include light;
-	}
-}
+// 	@media (prefers-color-scheme: light) {
+// 		@include light;
+// 	}
+// }

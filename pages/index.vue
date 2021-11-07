@@ -1,9 +1,9 @@
 <template>
     <div>
         asdasds ss
-        <Test></Test>
+        <!-- <Test></Test> -->
         <div>
-            <AtomHobButton :kind="'success'" secondary >test a ss </AtomHobButton>
+            <AtomHobButton :kind="'success'" secondary  >test a ss </AtomHobButton>
         </div>
     </div>
 </template>

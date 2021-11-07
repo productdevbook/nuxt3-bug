@@ -189,7 +189,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 :global(body) {
     --v-button-width: auto;
     --v-button-height: 44px;
@@ -214,7 +214,10 @@ export default defineComponent({
     --v-button-background-color-hover: var(--blue-125);
     --v-button-background-color-active: var(--blue);
 }
-
+// Todo: TEST tailwindcss test
+// .success{
+//     @apply bg-green-500;
+// }
 .success {
     --v-button-color: var(--white);
     --v-button-color-hover: var(--white);
@@ -278,6 +281,11 @@ export default defineComponent({
     display: flex;
     min-width: 100%;
 }
+
+// Todo: tailwindcss test
+// .button {
+//     @apply bg-gray-600 p-4;
+// }
 
 .button {
     position: relative;

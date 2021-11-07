@@ -8,9 +8,3 @@ import './styles/main.scss'
     <NuxtPage />
   </div>
 </template>
-
-<style>
-body {
-  @apply dark:bg-gray-900;
-}
-</style>
