@@ -3,7 +3,7 @@
         asdasds ss
         <Test></Test>
         <div>
-            <AtomHobButton :kind="'success'" secondary >test a </AtomHobButton>
+            <AtomHobButton :kind="'success'" secondary >test a ss </AtomHobButton>
         </div>
     </div>
 </template>
