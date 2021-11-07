@@ -11,4 +11,14 @@ export default defineNuxtConfig({
             },
         },
     },
+    vue: {
+        compilerOptions: {
+            directiveTransforms: {
+                focus: () => ({
+                    props: [],
+                    needRuntime: true
+                })
+            }
+        }
+    }
 })
