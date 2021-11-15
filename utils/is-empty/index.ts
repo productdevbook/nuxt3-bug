@@ -1,4 +1,4 @@
-import { isEmpty, notEmpty } from './is-empty';
+import { isEmpty, notEmpty } from './is-empty'
 
-export { isEmpty, notEmpty };
-export default { isEmpty, notEmpty };
+export { isEmpty, notEmpty }
+export default { isEmpty, notEmpty }

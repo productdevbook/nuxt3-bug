@@ -1,7 +1,7 @@
+dist
 node_modules
-*.log
-.nuxt
-nuxt.d.ts
 .output
-.DS_Store
+.nuxt
+.storybook
 storybook-static
+.github

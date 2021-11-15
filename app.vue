@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import './assets/css/tailwind.css'
-import './styles/main.scss'
+// import './assets/tailwind.css'
+import './assets/main.scss'
+// import './styles/main.scss'
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-import { useGroupable, useGroupableParent } from './groupable';
+import { useGroupable, useGroupableParent } from './groupable'
 
-export { useGroupable, useGroupableParent };
-export default { useGroupable, useGroupableParent };
+export { useGroupable, useGroupableParent }
+export default { useGroupable, useGroupableParent }

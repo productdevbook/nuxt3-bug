@@ -1,4 +1,4 @@
-import ClickOutside from './click-outside';
+import ClickOutside from './click-outside'
 
-export { ClickOutside };
-export default ClickOutside;
+export { ClickOutside }
+export default ClickOutside

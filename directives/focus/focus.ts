@@ -1,13 +1,12 @@
-import { Directive } from 'vue';
+import { Directive } from 'vue'
 
 const Focus: Directive = {
-	mounted(el, binding) {
-		if (binding.value) {
-			el.focus();
-		} else {
-			el.blur();
-		}
-	},
-};
+  mounted(el, binding) {
+    if (binding.value)
+      el.focus()
+    else
+      el.blur()
+  },
+}
 
-export default Focus;
+export default Focus

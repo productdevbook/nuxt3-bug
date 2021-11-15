@@ -1,39 +1,27 @@
-import { computed, ComputedRef } from 'vue';
+import { computed, ComputedRef, PropType } from 'vue'
 
 export const sizeProps = {
-	xSmall: {
-		type: Boolean,
-		default: false,
-	},
-	small: {
-		type: Boolean,
-		default: false,
-	},
-	large: {
-		type: Boolean,
-		default: false,
-	},
-	xLarge: {
-		type: Boolean,
-		default: false,
-	},
-};
-
-interface RequiredProps {
-	xSmall: boolean;
-	small: boolean;
-	large: boolean;
-	xLarge: boolean;
+  size: {
+    type: String as PropType<'xs' | 'sm' | 'lg' | 'xl' | 'false'>,
+    default: 'sm',
+  },
 }
 
-export default function useSizeClass<T>(props: T & RequiredProps): ComputedRef<string | null> {
-	const sizeClass = computed<string | null>(() => {
-		if (props.xSmall) return 'x-small';
-		if (props.small) return 'small';
-		if (props.large) return 'large';
-		if (props.xLarge) return 'x-large';
-		return null;
-	});
+interface RequiredProps {
+  size: 'xs' | 'sm' | 'lg' | 'xl' | 'false'
+}
 
-	return sizeClass;
+type returnSize = 'xs' | 'sm' | 'lg' | 'xl' | 'false'
+
+export default function useSizeClass<T>(props: T & RequiredProps): ComputedRef<returnSize | null> {
+  const sizeClass = computed<returnSize | null>(() => {
+    if (props.size === 'xs') return 'xs'
+    if (props.size === 'sm') return 'sm'
+    if (props.size === 'lg') return 'lg'
+    if (props.size === 'xl') return 'xl'
+    if (props.size === 'false') return 'false'
+    return 'false'
+  })
+
+  return sizeClass
 }
