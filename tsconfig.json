@@ -1,19 +1,20 @@
 {
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "types": [
-      "unplugin-icons/types/vue",
-      "vite/client",
-      "@types/jest"
-    ],
-    "paths": {
-      "~~": [
-        "."
-      ],
-    },
+    "preserveConstEnums": true,
+    "types": ["vite/client", "@types/jest"],
     "esModuleInterop": true,
-    "include": [
-      "**/*.vue"
-    ]
-  }
+    "sourceMap": true,
+    "lib": ["esnext", "dom"]
+  },
+  "include": ["./**/*.ts", "./**/*.vue"],
+  "exclude": [
+    "node_modules",
+    "**/*.stories.ts", 
+    ".storybook/**/*.js",
+    ".storybook/**/*.ts",
+    "**/*.stories.ts",
+    "stories/**/*.js",
+    "stories/**/*.ts"
+  ]
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AtomHButton>Register for Beta Access</AtomHButton>
+    <AtomHButton kind="">Register for Beta Access</AtomHButton>
   </div>
 </template>
 
