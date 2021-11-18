@@ -1,13 +1,8 @@
 {
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "preserveConstEnums": true,
-    "types": ["vite/client", "@types/jest"],
-    "esModuleInterop": true,
-    "sourceMap": true,
-    "lib": ["esnext", "dom"]
+    "types": ["jest","node"]
   },
-  "include": ["./**/*.ts", "./**/*.vue"],
   "exclude": [
     "node_modules",
     "**/*.stories.ts", 
@@ -15,6 +10,11 @@
     ".storybook/**/*.ts",
     "**/*.stories.ts",
     "stories/**/*.js",
-    "stories/**/*.ts"
+    "stories/**/*.ts",
+    "apollo.config.js",
+    ".output",
+    "storybook-static",
+    ".github",
+    ".vscode"
   ]
 }

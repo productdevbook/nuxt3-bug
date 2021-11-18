@@ -1,17 +1,25 @@
 <template>
   <div>
-    <AtomHButton kind="">Register for Beta Access</AtomHButton>
+    <div>asdasd</div>
+    <AtomHInput v-model="form.email" />
   </div>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, ref } from 'vue'
+  import {defineComponent, ref} from 'vue'
 
-export default defineComponent({
-  setup() {
+  export default defineComponent({
+    setup() {
+      const form = ref({
+        email: '',
+        password: '',
+      })
+    
 
-    return {}
-  },
-  head: {},
-})
+      return {
+
+        form,
+      }
+    },
+  })
 </script>
