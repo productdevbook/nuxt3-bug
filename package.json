@@ -7,7 +7,7 @@
     "allupdate": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.176",
+    "@types/lodash": "4.14.176",
     "autoprefixer": "10.4.0",
     "nuxt3": "3.0.0-27268729.5b8e10f",
     "postcss": "8.3.11",
