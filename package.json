@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/lodash": "^4.14.176",
     "autoprefixer": "10.4.0",
-    "nuxt3": "3.0.0-27268729.5b8e10f",
+    "nuxt3": "3.0.0-rc.9-27703329.537338f",
     "postcss": "8.3.11",
     "sass": "1.43.4",
     "tailwindcss": "3.0.0-alpha.1"
